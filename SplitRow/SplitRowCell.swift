@@ -30,7 +30,7 @@ open class SplitRowCell<L: RowType, R: RowType>: Cell<SplitRowValue<L.Cell.Value
 		self.tableViewRight = SplitRowCellTableView()
         tableViewRight.backgroundColor = .clear
 		tableViewRight.separatorStyle = .none
-		tableViewRight.leftSeparatorStyle = .singleLine
+		tableViewRight.leftSeparatorStyle = .none // .singleLine
 		tableViewRight.translatesAutoresizingMaskIntoConstraints = false
         
 		contentView.addSubview(tableViewLeft)
